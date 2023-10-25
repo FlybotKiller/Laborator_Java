@@ -74,7 +74,7 @@ public class CourseManager {
                 }
                 course.averageGrade /= course.students.length;
                 System.out.printf("%.1f", course.averageGrade); //print float value with only one decimal
-                System.out.println(" "); //newline
+                System.out.println(" "); //newline for easier readability
                 return;
             }
         }
