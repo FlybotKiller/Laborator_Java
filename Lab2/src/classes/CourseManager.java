@@ -73,9 +73,8 @@ public class CourseManager {
                     course.averageGrade += student.grade;
                 }
                 course.averageGrade /= course.students.length;
-                System.out.printf("%.1f", course.averageGrade);
+                System.out.printf("%.1f", course.averageGrade); //print float value with only one decimal
                 System.out.println(" "); //newline
-                //Print float value with only one decimal
                 return;
             }
         }
