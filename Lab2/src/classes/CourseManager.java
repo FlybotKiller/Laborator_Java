@@ -88,11 +88,13 @@ public class CourseManager {
 
     public void returnAverageProfGrade(String profName) {
         System.out.println("\n--Average grade given by " + profName + ": ");
+        int ctr = 0;
         float totalGrade = 0f;
         for (Course course : courses) {
             if (course.teacher.getProf().equals(profName)) {
                 System.out.println("Prof " + profName + " found in course: " + course.name);
                 totalGrade += course.averageGrade;
+                ctr++;
             } else {
                 System.out.println("Prof " + profName + " not found in course: " + course.name);
             }
@@ -102,18 +104,16 @@ public class CourseManager {
             return;
         }
         System.out.println("Calculating average professor grade: ");
-        System.out.printf("%.1f", totalGrade / courses.length);
+        System.out.printf("%.1f", totalGrade / ctr);
         System.out.println(" "); //newline
     }
     /* Ex 5: this method iterates through each course, comparing existing professor names with our
     profName string, if names match, we list the courses containing the prof object,
-    add each averageGrade object and store the value in totalGrade.
+    add each averageGrade object, store the value in totalGrade and increment our ctr value.
     If no names match, totalGrade value will be 0 by default, if totalGrade is 0,
     we use return to end the method earlier
-    To return the average professor grade, we divide totalGrade by the length of the course array,
-    thus making it easier for further use in case new courses are added which contain the same
-    professor object.
-    "%.1f" is used to return the value as float, with only one decimal
+    To return the average professor grade, we divide totalGrade by our ctr value.
+    "%.1f" is used to return the value as float, with only one decimal.
      We assume that each course has different students enrolled for this method to be optimal. */
 }
 
