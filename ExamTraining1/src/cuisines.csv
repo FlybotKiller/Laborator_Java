@@ -1,0 +1,16 @@
+COUNTRY, DISH_NAME, MAIN_INGREDIENT, COOKING_TIME_MIN, SERVINGS, SPICE_LEVEL, CALORIES, YEAR_INTRODUCED, CHEF_NAME
+Italy, Risotto, Rice, 45, 4, Medium, 320, 1950, Giada De Laurentiis
+Japan, Sushi, Fish, 60, 2, Mild, 275, 1975, Masaharu Morimoto
+India, Butter Chicken, Chicken, 50, 3, Hot, 450, 1980, Sanjeev Kapoor
+Mexico, Tacos, Beef, 30, 4, Medium, 350, 1960, Enrique Olvera
+France, Ratatouille, Vegetables, 70, 4, Mild, 220, 1900, Julia Child
+Greece, Moussaka, Eggplant, 90, 6, Medium, 400, 1920, Cat Cora
+Thailand, Pad Thai, Noodles, 35, 2, Hot, 500, 1955, David Thompson
+Spain, Paella, Seafood, 55, 5, Mild, 370, 1935, Ferran Adrià
+China, Peking Duck, Duck, 120, 4, Mild, 600, 1910, Ken Hom
+USA, Cheeseburger, Beef, 20, 1, Mild, 520, 1945, Bobby Flay
+Lebanon, Tabouleh, Parsley, 25, 4, Mild, 150, 1970, Kamal Mouzawak
+Ethiopia, Doro Wat, Chicken, 75, 5, Hot, 350, 1950, Marcus Samuelsson
+Brazil, Feijoada, Pork, 240, 8, Medium, 650, 1930, Alex Atala
+South Korea, Bibimbap, Rice, 40, 2, Hot, 300, 1985, Roy Choi
+Turkey, Kebab, Lamb, 45, 3, Medium, 400, 1940, Musa Dağdeviren
