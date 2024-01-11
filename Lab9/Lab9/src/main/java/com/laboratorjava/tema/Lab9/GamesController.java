@@ -11,11 +11,9 @@ import java.util.List;
 public class GamesController {
 
     private List<Games> gamesList;
-    private List<Games> sortedGamesList;
 
     public GamesController() {
         gamesList = readCSV();
-        sortedGamesList = sortList();
     }
 
     private List<Games> readCSV() {
@@ -29,14 +27,6 @@ public class GamesController {
         return gamesFromFile;
     }
 
-    private List<Games> sortList() {
-        Collections.sort(gamesList);
-        int newID = 1;
-        for (var game : gamesList) {
-            game.setId(newID++);
-        }
-        return gamesList;
-    }
 
     //GET endpoint to retrieve all games
     @GetMapping
@@ -46,7 +36,7 @@ public class GamesController {
 
     //GET endpoint to retrieve a specific game by id
     @GetMapping("/{id}")
-    public Games getGameById(@PathVariable Integer id) {
+    public Games getGameById(@PathVariable("id") Integer id) {
         return gamesList.stream()
                 .filter(games -> games.getId().equals(id))
                 .findFirst()
@@ -62,7 +52,7 @@ public class GamesController {
 
     //PUT endpoint to update an existing game's name
     @PutMapping("/{id}")
-    public Games updateGame(@PathVariable Integer id, @RequestBody Games updatedGame) {
+    public Games updateGame(@PathVariable("id") Integer id, @RequestBody Games updatedGame) {
         for (var game : gamesList) {
             if (game.getId().equals(id)) {
                 game.setTitle(updatedGame.getTitle());
@@ -74,7 +64,7 @@ public class GamesController {
 
     //DELETE endpoint
     @DeleteMapping("/{id}")
-    public void deleteGame(@PathVariable Integer id) {
+    public void deleteGame(@PathVariable("id") Integer id) {
         gamesList.removeIf(games -> games.getId().equals(id));
     }
 

@@ -20,6 +20,10 @@ public class Games implements Comparable<Games> {
         this.publisher = publisher;
     }
 
+    public Games() {
+        //default constructor
+    }
+
     public Integer getId() {
         return id;
     }
