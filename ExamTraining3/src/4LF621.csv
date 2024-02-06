@@ -1,0 +1,11 @@
+ID, NUME_CONCURENT, CATEGORIE, DATA_CONCURSULUI, SCOR_TOTAL, RATARE, PREMII_CASTIGATE
+1, Ion Popescu, Adulti, 15-03-2024, 320, 3, 500
+2, Maria Ionescu, Adulti, 20-03-2024, 305, 2, 450
+3, Alexandru Voicu, U21, 18-03-2024, 290, 4, 400
+4, Elena Dumitru, Copii, 22-03-2024, 275, 1, 350
+5, Andrei Munteanu, Juniori, 19-03-2024, 260, 5, 300
+6, Larisa Enache, Copii, 21-03-2024, 340, 2, 600
+7, Bogdan Marinescu, Juniori, 16-03-2024, 330, 3, 550
+8, Cristina Neagu, U21, 23-03-2024, 315, 1, 500
+9, Mihai Georgescu, U21, 17-03-2024, 280, 4, 350
+10, Laura Vasile, Adulti, 24-03-2024, 295, 2, 400
